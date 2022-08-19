@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #bfd7e4;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 465px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #293241;
+}
+
+.page {
+  width: 750px;
+  height: 1930px;
+
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+}
+
+header h1 {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  color: #ffffff;
+
+  margin-top: 107px;
+}
+
+header h2 {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 50px 275px;
+}
+
+header p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #ffffff;
+
+  margin-top: 0px;
+}
+
+header img {
+  margin-top: 28px;
+}
+
+.header-1 {
+  top: 0px;
+  margin-top: 332px;
+
+  position: absolute;
+  width: 750px;
+  height: 133px;
+
+  background: #f67669;
+  border-radius: 20px 20px 0px 0px;
+}
+
+form {
+  width: 750px;
+  height: 1075px;
+  min-height: 300px;
+
+  margin-top: 110px;
+
+  background: #ffffff;
+  border-radius: 0px 0px 20px 20px;
+
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 31.73px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+
+  width: 100%;
+
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 10px;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label,
+.checkbox-wrapper label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4e4958;
+
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.input-wrapper label span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+
+  margin-left: 10px;
+
+  color: #c1bccc;
+}
+
+.input-wrapper label span:hover {
+  color: #4e4c55;
+}
+
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
+  background: #fafafc;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  width: 100%;
+
+  height: 55.53px;
+  padding: 0px 24px;
+
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.input-wrapper textarea {
+  padding: 10px 24px;
+  width: 608px;
+  height: 166.59px;
+
+  margin-bottom: 30px;
+}
+
+.input-wrapper select {
+  appearance: none;
+
+  -webkit-appearance: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+
+  margin-bottom: 31.73px;
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.col-2 > div:nth-child(1) {
+  width: 100%;
+}
+.col-2 > div:nth-child(2) {
+  width: 100%;
+}
+
+.col-3 {
+  display: flex;
+  gap: 32px;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 100%;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin: 0;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 23.8px;
+
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  width: 24px;
+  height: 23.8px;
+  content: '';
+  display: block;
+
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+
+.button {
+  width: 622px;
+  height: 51px;
+  background: #f67669;
+  border-radius: 8px;
+  border: 0;
+
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+
+  margin-top: px;
+
+  color: #ffffff;
+}
+
+.button:hover {
+  background: #e0675a;
+}
+
+input:invalid {
+  border: 1px solid #ff1010;
+}
